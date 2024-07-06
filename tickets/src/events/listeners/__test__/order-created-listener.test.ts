@@ -28,7 +28,8 @@ const setup = async () => {
       id: ticket.id,
       price: 100.00
     },
-    userId: 'userId'
+    userId: 'userId',
+    version: 0
   }
   
   const listener = new OrderCreatedListener(wrapper.client)
