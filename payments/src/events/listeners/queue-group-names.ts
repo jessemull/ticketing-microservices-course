@@ -1,0 +1,1 @@
+export const DEFAULT_QUEUE_GROUP_NAME = 'payments-srv'

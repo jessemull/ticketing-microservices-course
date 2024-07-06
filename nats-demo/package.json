@@ -1,0 +1,19 @@
+{
+  "name": "nats-demo",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "listen": "ts-node-dev --rs --notify false src/listener.ts",
+    "publish": "ts-node-dev --rs --notify false src/publisher.ts"
+  },
+  "author": "jessemull@gmail.com",
+  "license": "MIT",
+  "description": "A demo of the NATS streaming service.",
+  "dependencies": {
+    "@mytix/common": "^1.0.24",
+    "@types/node": "^20.14.7",
+    "node-nats-streaming": "^0.3.2",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.5.2"
+  }
+}
