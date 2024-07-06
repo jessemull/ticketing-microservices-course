@@ -2,6 +2,7 @@ import app from './app'
 import mongoose from 'mongoose'
 
 const start = async () => {
+  console.log('Starting auth server...')
   if (!process.env.JWT_SECRET_KEY) {
     throw new Error('JWT Secret key must be defined.')
   }
