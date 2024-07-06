@@ -25,7 +25,8 @@ const setup = async () => {
     id: new mongoose.Types.ObjectId().toHexString(),
     ticket: {
       id: ticket.id
-    }
+    },
+    version: 0
   }
   
   const listener = new OrderCancelledListener(wrapper.client)
