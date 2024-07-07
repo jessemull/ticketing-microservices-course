@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: payments
-          image: us.gcr.io/glass-arcanum-424002-c3/payments
+          image: jessemull/payments
           env:
             - name: STRIPE_API_SECRET_KEY
               valueFrom:
