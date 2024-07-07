@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: client
-          image: us.gcr.io/glass-arcanum-424002-c3/client
+          image: jessemull/client
 ---
 apiVersion: v1
 kind: Service

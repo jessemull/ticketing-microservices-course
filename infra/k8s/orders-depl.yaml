@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: orders
-          image: us.gcr.io/glass-arcanum-424002-c3/orders
+          image: jessemull/orders
           env:
             - name: JWT_SECRET_KEY
               valueFrom:

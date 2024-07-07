@@ -3,11 +3,12 @@ kind: Config
 manifests:
   rawYaml:
     - ./infra/k8s/*
+    - ./infra/k8s-dev/*
 build:
   googleCloudBuild:
     projectId: glass-arcanum-424002-c3
   artifacts:
-    - image: us.gcr.io/glass-arcanum-424002-c3/auth
+    - image: jessemull/auth
       context: auth
       docker:
         dockerfile: Dockerfile
@@ -15,7 +16,7 @@ build:
         manual:
           - src: "src/**/*.ts"
             dest: .
-    - image: us.gcr.io/glass-arcanum-424002-c3/client
+    - image: jessemull/client
       context: client
       docker:
         dockerfile: Dockerfile
@@ -23,7 +24,7 @@ build:
         manual:
           - src: "**/*.js"
             dest: .
-    - image: us.gcr.io/glass-arcanum-424002-c3/tickets
+    - image: jessemull/tickets
       context: tickets
       docker:
         dockerfile: Dockerfile
@@ -31,7 +32,7 @@ build:
         manual:
           - src: "src/**/*.ts"
             dest: .
-    - image: us.gcr.io/glass-arcanum-424002-c3/orders
+    - image: jessemull/orders
       context: orders
       docker:
         dockerfile: Dockerfile
@@ -39,7 +40,7 @@ build:
         manual:
           - src: "src/**/*.ts"
             dest: .
-    - image: us.gcr.io/glass-arcanum-424002-c3/expiration
+    - image: jessemull/expiration
       context: expiration
       docker:
         dockerfile: Dockerfile
@@ -47,7 +48,7 @@ build:
         manual:
           - src: "src/**/*.ts"
             dest: .
-    - image: us.gcr.io/glass-arcanum-424002-c3/payments
+    - image: jessemull/payments
       context: payments
       docker:
         dockerfile: Dockerfile
