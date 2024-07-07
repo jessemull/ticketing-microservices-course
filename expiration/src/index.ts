@@ -2,6 +2,7 @@ import { OrderCreatedListener } from './events/listeners/order-created-listener'
 import { wrapper } from './nats-client'
 
 const start = async () => {
+  console.log('Starting the expiration service...')
   if (!process.env.NATS_CLUSTER_ID) {
     throw new Error('MongoDB URI must be defined.')
   }

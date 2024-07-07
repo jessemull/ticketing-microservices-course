@@ -2,6 +2,8 @@ import 'bootstrap/dist/css/bootstrap.css'
 import buildClient from '../api/buildClient'
 import Header from '../components/header/header'
 
+// Wrapper for the app component must pass page props down...
+
 const AppComponent = ({ Component, currentUser, pageProps }) => {
   return (
     <div>
