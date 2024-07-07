@@ -18,7 +18,7 @@ app.set('trust proxy', true)
 
 app.use(json())
 app.use(cookieSession({
-  secure: process.env.NODE_ENV !== 'test',
+  secure: false,
   signed: false
 }))
 
